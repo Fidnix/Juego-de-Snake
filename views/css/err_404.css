@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(0, 78, 39);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    color: white;
+    /* box-shadow: 0 0 15px 3px black; */
+    /* -webkit-box-shadow: 0 0 15px 3px black; */
+    /* background-color: white; */
+}
+
+main a{
+    color: rgb(197, 197, 197);
+}
+
+.main--animated-span{
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    margin: auto;
+    text-align: center;
+
+    animation-name: rotateSad;
+    animation-duration: 1.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateSad{
+    0%{
+        color: red;
+        transform: rotate(0);
+    }
+
+    10%{
+        color: yellow;
+    }
+
+    20% {
+        color: greenyellow
+    }
+
+    30%{
+        color: skyblue;
+    }
+    
+    40%{
+        color: blue;
+    }
+    
+    50% {
+        color: purple;
+    }
+    
+    60%{
+        color: blue;
+    }
+
+    90%{
+        color: yellow;
+    }
+
+    80% {
+        color: greenyellow
+    }
+
+    70%{
+        color: skyblue;
+    }
+
+    100%{
+        color: red;
+        transform: rotate(360deg);
+    }
+}

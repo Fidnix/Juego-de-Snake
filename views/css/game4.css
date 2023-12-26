@@ -1,0 +1,150 @@
+main{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 500px auto;
+}
+
+.data-game{
+    padding: 20px;
+    grid-column: 1/2;
+    background-color: rgb(255, 255, 255);
+}
+
+.space-game{
+    grid-column: 2/3;
+    background-color: rgb(20, 20, 20);
+    display:flex;
+    align-items: center;
+    position: relative;
+}
+
+#game{
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgb(26, 26, 26);
+    image-rendering: optimizeSpeed;             /* Older versions of FF          */
+    image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+    image-rendering: -webkit-optimize-contrast; /* Safari                        */
+    image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+    image-rendering: pixelated;                 /* Awesome future-browsers       */
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.popup-game-over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: block; */
+}
+
+.game-over-info{
+    color: white;
+    text-align: center;
+}
+.popup-game-over.disabled{
+    display: none;
+}
+
+/* =================================== */
+/* Botones */
+/* =================================== */
+
+.btn-cont--game-btn{
+    padding: 5px 25px;
+    border: 1px solid rgb(0, 51, 51);
+    color: rgb(0, 128, 64);
+    background-color: transparent;
+}
+
+.btn-cont--game-btn:hover{
+    background-color: rgb(0, 128, 64);
+    color: white;
+}
+.btn-cont--game-btn{
+    transition: .3s;
+}
+
+/* ================================== */
+/* Btn states */
+/* ================================== */
+
+#btn_play[disabled], #btn_stop[disabled]{
+    background-color: gray;
+    color: rgb(73, 73, 73);
+}
+
+#btn_play[disabled]:hover,#btn_stop[disabled]:hover{
+    background-color: gray;
+    color: rgb(73, 73, 73);
+}
+
+/* ================================== */
+/* User data */
+/* ================================== */
+
+.data-game--user-data{
+    margin-bottom: 20px;
+}
+
+#user-data--direction-display{
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(32, 32, 32);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.central-circle{
+    background-color: rgb(100, 100, 100);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.arrow{
+    width: 0px;
+    height: 0;
+    border-left: 14.5px solid transparent;
+    border-right: 14.5px solid transparent;
+    border-bottom: 15px solid rgb(54, 54, 54);
+    position: absolute;
+}
+
+.arrow.arrow-selected{
+    border-bottom-color: rgb(189, 189, 189);
+}
+
+.arrow-up{
+    top: 10px;
+}
+
+.arrow-down{
+    bottom: 10px;
+    transform: rotate(180deg);
+}
+
+.arrow-left{
+    left: 0px;
+    transform: rotate(270deg);
+}
+
+.arrow-right{
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.you-firefox-addons-beacon{
+    display: none;
+}

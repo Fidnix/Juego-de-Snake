@@ -1,0 +1,38 @@
+#form_inicio{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 5px 5px 25px 2px black;
+}
+
+#form_inicio input[type=text], #form_inicio input[type=password]{
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 10px 0;
+}
+
+#form_inicio input[type=submit]{
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px 0;
+    border: 1px solid gray;
+}
+
+#form_inicio input[type=submit]{
+    transition: .3s;
+}
+
+#form_inicio input[type=submit]:hover{
+    background-color: rgb(173, 173, 173);
+    color: white;
+}
+
+#form_inicio a{
+    text-decoration: underline;
+    color: rgb(0, 179, 95);
+}
+
+#form_inicio a:hover{
+    color: rgb(52, 255, 160);
+}

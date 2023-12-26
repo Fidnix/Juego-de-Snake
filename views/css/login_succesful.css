@@ -1,0 +1,35 @@
+#usuario_verificado{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 20px 0px black;
+    -webkit-box-shadow: 0 0 20px 0px black;
+}
+
+#usuario_verificado h2{
+    color:rgb(0, 192, 134);
+}
+
+#usuario_verificado h4{
+    color:rgb(1, 126, 88);
+    font-size: 25px;
+}
+
+#usuario_verificado div{
+    margin-top: 30px;
+}
+
+#usuario_verificado a{
+    text-decoration: none;
+    color: rgb(16, 133, 98);
+    border: 2px solid rgb(1, 126, 88);
+    padding: 5px 20px;
+}
+
+#usuario_verificado a{transition: .3s;}
+
+#usuario_verificado a:hover{
+    background-color: rgb(16, 133, 98);
+    color: white;
+}
